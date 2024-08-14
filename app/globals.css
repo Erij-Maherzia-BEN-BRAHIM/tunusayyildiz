@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes flipIn {
+    from {
+      transform: rotateY(-180deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flipOut {
+    from {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: rotateY(180deg);
+      opacity: 0;
+    }
+  }
+  
+  .flip-in {
+    animation: flipIn 0.6s forwards;
+  }
+  
+  .flip-out {
+    animation: flipOut 0.6s forwards;
+  }
